@@ -1,31 +1,27 @@
-# Conference info
-conf:
-  name: 2º FEMUG-CWB
-  description: Front-end meetup grup - Curitiba
-  date: 05/12/2015
-  address: "Avenida Cândido de Abreu, 381 - Curitiba / PR"
-  venue: Aldeia Coworking
-  city: Curitiba / PR
-
 # Site info
+title: FEMUG-CWB
 url: http://femug-cwb.com.br
-favicon: /favicon.ico
+favicon: /images/favicon.ico
 google-analytics: "UA-00000000-1"
-images:
-  cover: /images/bg.jpg
-  facebook: http://braziljs.org/img/fb-share.jpg
-
-register_link: http://eventick.com.br
+email: femug.cwb@gmail.com
+twitter: femugcwb
 
 # Active sections on the website
 sections:
-  about: true
-  location: true
-  speakers: true
-  schedule: true
-  sponsors: true
-  partners: true
-  contact: false
+  - slug: about
+    title: Sobre
+  - slug: location
+    title: Localização
+  - slug: speakers
+    title: Palestrantes
+  - slug: schedule
+    title: Cronograma
+  # - slug: sponsors
+  #   title: Patrocinadores
+  - slug: partners
+    title: Parceiros
+  - slug: contact
+    title: Contato
 
 source: source
 sass:

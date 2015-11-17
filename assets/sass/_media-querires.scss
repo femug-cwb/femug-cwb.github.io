@@ -1,0 +1,675 @@
+// /*Styles for screen 515px and lower
+// @media only screen and (max-width: 768px) {
+//   .top-nav {
+//     border-bottom: 0;
+//     float: none;
+
+//     ul {
+//       display: none;
+//       height: auto;
+//       margin: 1.3em 0;
+//       background: #eee;
+//     }
+
+//     a#pull {
+//       display: block;
+//       position: relative;
+//       color: #F26D7D;
+//       text-align: right;
+//       position: absolute;
+//       top: 18px;
+
+//       &:after {
+//         content: "";
+//         background: url("nav-icon.png") no-repeat;
+//         width: 30px;
+//         height: 30px;
+//         display: inline-block;
+//         position: absolute;
+//         right: 15px;
+//         top: 10px;
+//       }
+
+//       img {
+//         margin-right: 2%;
+//       }
+//     }
+//   }
+
+//   .top-nav ul li a {
+//     color: #2C3E50;
+//     padding: 0em 0;
+//   }
+// }
+
+/*Smartphone*/
+@media only screen and (max-width: 320px) {
+  .top-nav {
+    float: none;
+
+    li {
+      display: block;
+      float: none;
+      width: 100%;
+
+      a {
+        border-bottom: 1px solid #888;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font: 24px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .callbacks_nav {
+    top: 47%;
+  }
+}
+
+
+@media (max-width: 1366px) {
+  .about-head h3,
+  .gallery-head h3,
+  .port-head h3,
+  .speaker-head h3,
+  .feed-head h3,
+  .section-head h2 {
+    font-size: 3.8rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main-header {
+    min-height: 650px;
+  }
+
+  .about-head h3,
+  .gallery-head h3,
+  .port-head h3,
+  .speaker-head h3,
+  .feed-head h3,
+  .section-head h2 {
+    font-size: 3.8rem;
+  }
+
+  .slide-btn {
+    width: 34%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-header {
+    min-height: 600px;
+  }
+
+  .about-head h3,
+  .gallery-head h3,
+  .port-head h3,
+  .speaker-head h3,
+  .feed-head h3,
+  .section-head h2 {
+    font-size: 3.5em;
+  }
+
+  .slide-btn {
+    width: 48%;
+    padding: 0.7em 1em;
+  }
+
+  .tittle-head {
+    margin: 7% auto;
+
+    p {
+      margin: 0.5em 0;
+    }
+  }
+
+  .about {
+    padding: 3em 0;
+  }
+
+  .services {
+    padding-top: 1em;
+    padding-bottom: 4em;
+  }
+
+  .service_grid p,
+  .speaker_grid p {
+    width: 88%;
+  }
+
+  .prt-btn,
+  .con-btn {
+    width: 31%;
+  }
+
+  #portfoliolist {
+    text-align: center;
+    margin: 1% 0% 6% 15%;
+  }
+
+  .view2 {
+    margin: 33px 11px;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 39%;
+    font-size: 1.5em;
+    margin: 4px 38px;
+  }
+
+  .contact-head {
+    padding: 5em 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .tittle-head {
+    h1 {
+      font-size: 3.6em;
+    }
+
+    p {
+      font-size: 2.73em;
+    }
+  }
+
+  .main-header {
+    min-height: 435px;
+    background-size: inherit;
+  }
+
+  .about-head h3,
+  .gallery-head h3,
+  .port-head h3,
+  .speaker-head h3,
+  .feed-head h3,
+  .section-head h2 {
+    font-size: 2rem;
+  }
+
+  .potrfolio-content {
+    padding-bottom: 5em;
+  }
+
+  .tittle-head {
+    margin: 6% auto;
+    width: 94%;
+  }
+
+  .slide-btn {
+    width: 36%;
+    padding: 0.7em 1em;
+    margin-top: 10px;
+  }
+
+  .about-head {
+    padding: 0em 0;
+  }
+
+  .prt-btn,
+  .con-btn {
+    width: 44%;
+  }
+
+  .view {
+    img {
+      width: 100%;
+    }
+
+    float: none;
+  }
+
+  #portfoliolist {
+    width: 100%;
+    margin: 0;
+  }
+
+  .portfolio-grids {
+    margin: 1px 0% 2% 0%;
+  }
+
+  .view2 {
+    float: none;
+    margin: 1% 0 0% 29%;
+
+    .mask,
+    .content {
+      width: 53%;
+    }
+  }
+
+  #contact {
+    background: url(../images/bg-4.jpg);
+    background-size: cover;
+    min-height: 650px;
+    padding-bottom: 2em;
+  }
+
+  .speaker_grid p {
+    padding-bottom: 1.5em;
+  }
+
+  .contact-form {
+    input[type="text"] {
+      width: 48.85%;
+    }
+
+    textarea {
+      width: 98%;
+    }
+  }
+
+  .address {
+    margin-top: 4em;
+  }
+
+  .logo2,
+  .copy-right {
+    float: none;
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 39%;
+    font-size: 1.5em;
+    margin: 4px 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-header {
+    min-height: 354px;
+  }
+
+  .view2 {
+    .mask,
+    .content {
+      width: 66%;
+    }
+  }
+
+  .tittle-head {
+    h1 {
+      font-size: 3em;
+    }
+
+    p {
+      margin: 2px 0;
+      font-size: 2.5em;
+    }
+  }
+
+  .slide-btn {
+    width: 39%;
+    padding: 0.5em 1em;
+    margin-top: 10px;
+  }
+
+  .about {
+    padding: 2em 0;
+  }
+
+  .about-head h3,
+  .gallery-head h3,
+  .port-head h3,
+  .speaker-head h3,
+  .feed-head h3,
+  .section-head h2 {
+    font-size: 2.7em;
+  }
+
+  .about-head p {
+    font-size: 1em;
+  }
+
+  .services {
+    padding-top: 0em;
+    padding-bottom: 3em;
+  }
+
+  .prt-btn,
+  .con-btn {
+    width: 49%;
+  }
+
+  .portfolio {
+    background: url(../images/dow-bg.jpg);
+    min-height: 354px;
+  }
+
+  .view {
+    img {
+      width: 100%;
+    }
+
+    float: none;
+  }
+
+  #portfoliolist {
+    width: 100%;
+    margin: 0;
+  }
+
+  .address {
+    margin-top: 4em;
+  }
+
+  .copy-right p {
+    font-size: 1em;
+  }
+
+  .prt-btn,
+  .con-btn {
+    width: 54%;
+  }
+
+  .address h4 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header {
+    min-height: 295px;
+  }
+
+  .contact-head h3 {
+    font-size: 3.7em;
+  }
+
+  .tittle-head {
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      margin: 0px 0;
+      font-size: 1.6em;
+    }
+  }
+
+  .slide-btn {
+    width: 40%;
+    padding: 0.7em 1em;
+    margin-top: 10px;
+    font-size: 1em;
+  }
+
+  .about-head {
+    p {
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 2em;
+    }
+  }
+
+  .gallery-head h3,
+  .port-head h3,
+  .speaker-head h3,
+  .feed-head h3,
+  .section-head h2 {
+    font-size: 2em;
+  }
+
+  .gallery-head {
+    margin: 2em 0;
+  }
+
+  .service_grid h3 {
+    font-size: 1.4em;
+  }
+
+  .prt-btn,
+  .con-btn {
+    width: 60%;
+    padding: 0.5em 0.5em;
+  }
+
+  .portfolio {
+    background: url(../images/dow-bg.jpg);
+    min-height: 299px;
+  }
+
+  .port-head {
+    padding: 2em 0;
+  }
+
+  #speaker {
+    padding-top: 1em;
+    padding-bottom: 3em;
+  }
+
+  .potrfolio-content {
+    padding-bottom: 4em;
+  }
+
+  .view2 {
+    float: none;
+    margin: 1% 0 0% 18%;
+
+    .mask,
+    .content {
+      width: 78%;
+    }
+  }
+
+  .contact {
+    background: url(../images/bg-3.jpg);
+    min-height: 351px;
+  }
+
+  .contact-form {
+    input[type="text"] {
+      width: 98.85%;
+      padding: 0.5em 0.5em;
+    }
+
+    textarea {
+      width: 98.5%;
+      min-height: 162px;
+    }
+  }
+
+  .address {
+    margin-top: 7em;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 97%;
+    font-size: 1.5em;
+    margin: 4px 9px;
+  }
+
+  .logo2 {
+    float: none;
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .copy-right {
+    float: none;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .speaker_grid h3,
+  .address h4 {
+    font-size: 1.5em;
+  }
+
+  .copy-right p {
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    margin: 2em -1em;
+  }
+
+  .main-header {
+    min-height: 243px;
+  }
+
+  .tittle-head {
+    h1 {
+      font-size: 1.6em;
+    }
+
+    p {
+      margin: 3px 0;
+      font-size: 1.3em;
+    }
+  }
+
+  .slide-btn {
+    width: 51%;
+    padding: 0.7em 1em;
+    margin-top: 5px;
+    font-size: 15px;
+  }
+
+  .about {
+    padding: 1em 0;
+  }
+
+  .about-head h3,
+  .gallery-head h3,
+  .port-head h3,
+  .speaker-head h3,
+  .feed-head h3,
+  .section-head h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-head {
+    span {
+      font-size: 1.1em;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6em;
+      overflow: hidden;
+      height: 138px;
+    }
+  }
+
+  .service_grid {
+    h3 {
+      font-size: 1.05em;
+    }
+
+    p {
+      width: 96%;
+      font-size: 15px;
+    }
+  }
+
+  .speaker_grid p {
+    width: 96%;
+    font-size: 15px;
+  }
+
+  .prt-btn,
+  .con-btn {
+    width: 65%;
+    padding: 0.5em 0.5em;
+    font-size: 16px;
+  }
+
+  .tittle-head {
+    margin: 12% auto;
+    width: 94%;
+  }
+
+  nav ul {
+    margin: 0;
+    background: #eee;
+  }
+
+  .portfolio {
+    background: url(../images/dow-bg.jpg);
+    min-height: 184px;
+  }
+
+  .port-head {
+    padding: 1.96em 0;
+  }
+
+  .gallery-head p,
+  .port-head p,
+  .speaker-head p,
+  .feed-head p {
+    font-size: 1.1em;
+  }
+
+  .potrfolio-content {
+    padding-bottom: 1em;
+  }
+
+  .view2 {
+    float: none;
+    margin: 1% 0 0% 0%;
+  }
+
+  .speaker_grid h3 {
+    font-size: 1.05em;
+  }
+
+  .contact-head {
+    h3 {
+      font-size: 2em;
+    }
+
+    padding: 2em 0;
+  }
+
+  #speaker {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .contact {
+    background: url(../images/bg-3.jpg);
+    min-height: 231px;
+  }
+
+  .contact-form {
+    input[type="text"] {
+      width: 100%;
+      padding: 0.45em 0.45em;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 110px;
+      font-size: 15px;
+    }
+
+    input[type="submit"] {
+      width: 98.6%;
+      font-size: 1em;
+      margin: 4px 1px;
+      padding: 9px 11px;
+    }
+  }
+
+  .view2 {
+    .mask,
+    .content {
+      width: 100%;
+    }
+  }
+}

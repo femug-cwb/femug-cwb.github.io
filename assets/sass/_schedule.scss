@@ -1,0 +1,27 @@
+
+.schedule-tbl {
+  background: $white-color;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.schedule-time {
+  width: 13%;
+}
+
+.schedule-slot {
+  width: 25%;
+  color: #2b2b2b;
+}
+
+.schedule-tbl tbody tr:hover {
+  background: #fffde1;
+}
+
+.schedule-coffee,
+.schedule-closing,
+.schedule-lunch,
+.schedule-other {
+  color: $primary-color;
+}
