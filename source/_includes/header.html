@@ -1,0 +1,24 @@
+<header class="main-header" style="background-image: url({{ site.images.cover }})">
+    <!--- start-header-->
+    <div id="home" class="header">
+        <div class="top-header">
+            <div class="container">
+                <h1 class="logo" title="{{ site.conf.name }}">
+                    <a href="/"><img src="/images/logo.png" alt="Logo {{ site.conf.name }}" width="120px"></a>
+                </h1>
+                {% include nav.html %}
+            </div>
+        </div>
+    </div>
+    <!--- //End-header-->
+
+    <div class="tittle-head">
+      <h1>{{ site.conf.name }}</h1>
+      <p>dia <strong>{{ site.conf.date }}</strong> na {{ site.conf.venue }}</p>
+      <div class="learn-button">
+        <a class="slide-btn" href="{{ site.register_link }}" target="_blank" title="Inscreva-se!">Inscreva-se!</a>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+</header>

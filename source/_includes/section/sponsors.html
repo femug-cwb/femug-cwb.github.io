@@ -1,0 +1,23 @@
+{% if site.sections.sponsors %}
+<!-- SPONSORS -->
+<section class="sponsors" id="sponsors">
+  <div class="container">
+    <h2 class="section-title">Patrocinadores</h2>
+    <ul class="sponsors-list">
+      {% for sponsor in site.data.sponsors %}
+        <li class="sponsor-item">
+          <a class="sponsor-logo sponsor-link" href="{{ sponsor.url }}">
+            <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" class="photo">
+          </a>
+        </li>
+      {% endfor %}
+      <li class="sponsor-item">
+        <a class="sponsor-logo sponsor-link sponsor-call" href="#">
+          <img src="/assets/img/your-logo.jpg" alt="your logo" class="photo">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- / SPONSORS -->
+{% endif %}

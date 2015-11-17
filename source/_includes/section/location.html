@@ -1,0 +1,16 @@
+{% if site.sections.location %}
+<!-- LOCATION -->
+<section id="location" class="location">
+    <div class="container">
+        <div class="location-head">
+            <h2>Localização</h2>
+
+            {% if site.conf.address %}
+              <p>{{ site.conf.address }}</p>
+              <a class="con-btn" href="#">Ver no Google maps</a>
+            {% endif %}
+        </div>
+    </div>
+</section>
+<!-- / LOCATION -->
+{% endif %}
