@@ -10,26 +10,6 @@
       <h2>Cronograma</h2>
     </div>
 
-    <div class="schedule-list">
-      {% for schedule in page.schedule %}
-        {% if schedule.presentation %}
-          <a href="#" class="panel-heading">
-            <div class="row">
-              <div class="col-md-2">{{ schedule.presentation.time }}</div>
-              <div class="col-md-10">{{ schedule.presentation.title }}</div>
-            </div>
-          </a>
-        {% else %}
-          <a href="#" class="panel-heading">
-            <div class="row">
-              <div class="col-md-2">{{ schedule.time }}</div>
-              <div class="col-md-10">{{ schedule.name }}</div>
-            </div>
-          </a>
-        {% endif %}
-      {% endfor %}
-    </div>
-
     <div class="schedule-tbl">
       <table class="table table-bordered table-striped">
         <thead>
