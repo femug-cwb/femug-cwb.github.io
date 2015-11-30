@@ -4,18 +4,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-<title>{{ site.conf.name }}</title>
+<title>{{ page.conf.name }}</title>
 
-<meta name="author" content="{{ site.conf.name }}">
-<meta name="description" content="{{ site.conf.description }}">
+<meta name="author" content="{{ page.conf.name }}">
+<meta name="description" content="{{ page.conf.description }}">
 
 <!-- FACEBOOK -->
+<meta property="fb:admins" content="100003797913346">
 <meta property="fb:app_id" content="1427013847574832">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}">
-<meta property="og:title" content="{{ site.conf.name }}">
-<meta property="og:description" content="{{ site.conf.description }}">
-<meta property="og:image" content="{{ site.images.facebook }}">
+<meta property="og:title" content="{{ page.conf.name }}">
+<meta property="og:description" content="{{ page.conf.description }}">
+<meta property="og:image" content="{{ page.conf.cover }}">
 <!-- / FACEBOOK -->
 
 <link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">
