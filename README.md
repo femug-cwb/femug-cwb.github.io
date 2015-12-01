@@ -21,6 +21,7 @@ Access, [localhost:4000](http://localhost:4000/)
 * Create a new branch: `git branch -b YOUR_BRANCH`
 * Commit your changes in new branch: `git commit -m "YOUR MESSAGE"`
 * Add upstream url for the repo original: `git remote add upstream git@github.com:femug-cwb/femug-cwb.github.io.git`
+* Fetch all changes: `git fetch --all`
 * Update your repo with the original: `git rebase upstream/source`
 * Push your changes to your new branch: `git push origin YOUR_BRANCH`
 
