@@ -1,13 +1,15 @@
+{% if page.conf.register_link %}
+  <section class="register-banner sections">
 
-<section class="register-banner">
+    <div class="container">
 
-  <div class="container">
+      <div class="section-head">
+        <h2>Já fez sua inscrição? É gratuito</h2>
+        <span>... e vai ter coxinha!</span>
+        <a class="button ghost" href="{{ page.conf.register_link }}" target="_blank">Inscreva-se!</a>
+      </div>
 
-    <div class="potrfolio-head">
-      <h2>Já fez sua inscrição? É gratuito!</h2>
-      <a class="prt-btn" href="#">Inscreva-se!</a>
     </div>
 
-  </div>
-
-</section>
+  </section>
+{% endif %}
