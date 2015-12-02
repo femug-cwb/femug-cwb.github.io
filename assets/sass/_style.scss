@@ -80,6 +80,7 @@
 // }
 
 
+
 .services {
   padding-top: 2em;
   background: #f8f8f8;
@@ -411,6 +412,91 @@ ul.soc_icons {
   -moz-opacity: 0;
   filter: alpha(opacity = 0);
 }
+
+/********Schedule section ********/
+#schedule{
+  background: #F1F1F1;
+}
+
+
+.lib-panel {
+    margin-bottom: 20px;
+
+    .data{
+      font-size: 12px;
+      color: #AAA;
+    }
+
+
+    .title{}
+
+    .desc{}
+
+}
+
+
+.lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 26px;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+.lib-panel .lib-row.lib-desc a{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.row-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    background: #fff;
+
+
+    &.color-primary{
+      border-left: 2px solid #c12b2c;
+      .lib-row.lib-header .lib-header-seperator{
+            background-color: #c12b2c;
+      }
+    }
+
+    &.color-comp{
+      border-left: 2px solid #00C0A1;
+      .lib-row.lib-header .lib-header-seperator{
+            background-color: #00C0A1;
+      }
+    }
+
+}
+
+.no-padding {
+    padding: 0;
+}
+
+
 
 /******** Iframe contato *******/
 
