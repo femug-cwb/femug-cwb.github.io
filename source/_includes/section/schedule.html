@@ -1,12 +1,33 @@
-{% if site.sections.schedule %}
+
+{% include section/register-banner.html %}
+
 <!-- SCHEDULE -->
-<section class="schedule sections" id="schedule">
+<section id="schedule" class="schedule sections">
 
   <div class="container">
 
-    <div class="speaker-head">
+    <div class="section-head">
       <h2>Cronograma</h2>
-      <p>Conheça os caras!</p>
+    </div>
+
+    <div class="schedule-list">
+      {% for schedule in page.schedule %}
+        {% if schedule.presentation %}
+          <a href="#" class="panel-heading">
+            <div class="row">
+              <div class="col-md-2">{{ schedule.presentation.time }}</div>
+              <div class="col-md-10">{{ schedule.presentation.title }}</div>
+            </div>
+          </a>
+        {% else %}
+          <a href="#" class="panel-heading">
+            <div class="row">
+              <div class="col-md-2">{{ schedule.time }}</div>
+              <div class="col-md-10">{{ schedule.name }}</div>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
     </div>
 
     <div class="schedule-tbl">
@@ -19,18 +40,18 @@
           </tr>
         </thead>
         <tbody>
-          {% for slot in site.data.schedule %}
-            {% if slot.presentation %}
+          {% for schedule in page.schedule %}
+            {% if schedule.presentation %}
               <tr>
-                <td class="schedule-time">{{ slot.presentation.time }}</td>
-                <td class="schedule-slot">{{ slot.presentation.title }}</td>
-                <td class="schedule-description">{{ slot.presentation.description }}</td>
+                <td class="schedule-time">{{ schedule.presentation.time }}</td>
+                <td class="schedule-slot">{{ schedule.presentation.title }}</td>
+                <td class="schedule-description">{{ schedule.presentation.description | strip_html | truncatewords: 40 }}</td>
               </tr>
             {% else %}
               <tr class="schedule-other">
-                <td class="schedule-time">{{ slot.time }}</td>
-                <td class="schedule-slot">{{ slot.name }}</td>
-                <td class="schedule-description">{{ slot.description }}</td>
+                <td class="schedule-time">{{ schedule.time }}</td>
+                <td class="schedule-slot">{{ schedule.name }}</td>
+                <td class="schedule-description">{{ schedule.description }}</td>
               </tr>
             {% endif %}
           {% endfor %}
@@ -42,4 +63,3 @@
 
 </section>
 <!-- / SCHEDULE -->
-{% endif %}

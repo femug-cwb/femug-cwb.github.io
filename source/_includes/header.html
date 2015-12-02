@@ -1,24 +1,48 @@
-<header class="main-header" style="background-image: url({{ site.images.cover }})">
+<section class="main-header" {% if page.conf.cover %}style="background-image: url({{ page.conf.cover }})"{% endif %}>
+
     <!--- start-header-->
-    <div id="home" class="header">
+    <header id="home" class="header">
         <div class="top-header">
             <div class="container">
-                <h1 class="logo" title="{{ site.conf.name }}">
-                    <a href="/"><img src="/images/logo.png" alt="Logo {{ site.conf.name }}" width="120px"></a>
+
+                <h1 class="logo" title="{% if page.conf.name %}{{ page.conf.name }}{% else %}{{ site.conf.name }}{% endif %}">
+                    <a href="{{ page.permalink }}"><img src="/assets/images/logo.png" alt="Logo" width="120px"></a>
                 </h1>
-                {% include nav.html %}
+
+                <nav class="top-nav">
+                    <ul>
+                      {% for item in site.sections %}
+                        <li>
+                          <a href="#{{ item.slug }}" class="scroll">{{ item.title }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                    <a href="#" id="pull"><img src="/assets/images/menu-icon.png" title="menu"></a>
+                </nav>
+
+                <div class="clearfix"></div>
             </div>
         </div>
-    </div>
+    </header>
     <!--- //End-header-->
 
     <div class="tittle-head">
-      <h1>{{ site.conf.name }}</h1>
-      <p>dia <strong>{{ site.conf.date }}</strong> na {{ site.conf.venue }}</p>
-      <div class="learn-button">
-        <a class="slide-btn" href="{{ site.register_link }}" target="_blank" title="Inscreva-se!">Inscreva-se!</a>
-      </div>
+
+      <h1>{% if page.conf.name %}{{ page.conf.name }}{% else %}{{ site.conf.name }}{% endif %}</h1>
+
+      <p>
+        <strong>{% if page.conf.date %}{{ page.conf.date }}{% else %}{{ site.conf.date }}{% endif %}
+        </strong> na {% if page.conf.venue %}{{ page.conf.venue }}{% else %}{{ site.conf.venue }}{% endif %}
+      </p>
+
+      {% if page.conf.register_link %}
+        <div class="learn-button">
+          <a class="button" href="{{ page.conf.register_link }}" target="_blank" title="Inscreva-se!">Inscreva-se!</a>
+        </div>
+      {% endif %}
+
     </div>
 
     <div class="clearfix"></div>
-</header>
+
+</section>
