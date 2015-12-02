@@ -411,3 +411,31 @@ ul.soc_icons {
   -moz-opacity: 0;
   filter: alpha(opacity = 0);
 }
+
+/******** Iframe contato *******/
+
+.google-form{
+  text-align: center;
+
+  textarea{width: 100%;}
+
+  .required-message{
+    font-size: 11px;
+    text-align: left;
+  }
+
+  .btn-custom{
+    background: #c12b2c;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    float: right;
+  }
+
+  .ss-password-warning{
+    display: none;
+  }
+
+  #navigation-table{width: 100%;}
+}
