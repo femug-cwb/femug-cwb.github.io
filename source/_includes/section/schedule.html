@@ -8,9 +8,62 @@
 
     <div class="section-head">
       <h2>Cronograma</h2>
+      <span>Confira a programação</span>
     </div>
 
-    <div class="schedule-tbl">
+
+  {% for schedule in page.schedule %}
+    {% if schedule.presentation %}
+    <div class="col-md-5 col-md-offset-1 lib-item" data-category="view">
+        <div class="lib-panel">
+            <div class="row box-shadow color-primary">
+                <div class="col-md-12">
+                    <div class="lib-row lib-header">
+                        <span class="data">
+                          <i class="glyphicon glyphicon-time" aria-hidden="true"></i>
+                          {{ schedule.presentation.time }}
+                        </span>
+                        <p class="title">{{ schedule.presentation.title }}</p>
+                        <div class="lib-header-seperator"></div>
+                    </div>
+                    <div class="lib-row lib-desc">
+                          <p class="desc">{{ schedule.presentation.description | strip_html | truncatewords: 40 }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% else %}
+    <div class="col-md-5 col-md-offset-1 lib-item" data-category="view">
+        <div class="lib-panel">
+            <div class="row box-shadow color-comp">
+                <div class="col-md-12">
+                    <div class="lib-row lib-header">
+                        <span class="data">
+                            <i class="glyphicon glyphicon-time" aria-hidden="true"></i>
+                            {{ schedule.time }}
+                          </span>
+                         <p class="title">{{ schedule.name }}</p>
+                        <div class="lib-header-seperator"></div>
+                    </div>
+                    <div class="lib-row lib-desc">
+                        <p class="desc">{{ schedule.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+
+
+
+
+
+
+
+    <!-- <div class="schedule-tbl">
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
@@ -37,7 +90,7 @@
           {% endfor %}
         </tbody>
       </table>
-    </div>
+    </div> -->
 
   </div>
 
