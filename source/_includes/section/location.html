@@ -1,21 +1,16 @@
-
+{% if site.sections.location %}
 <!-- LOCATION -->
 <section id="location" class="location">
-  <div class="container">
+    <div class="container">
+        <div class="location-head">
+            <h2>Localização</h2>
 
-    <div class="section-head">
-
-      {% if page.conf.address %}
-        <h2>Localização</h2>
-        <span>{{ page.conf.address }}</span>
-
-        {% if page.conf.location %}
-          <a class="button ghost" href="{{ page.conf.location }}" target="_blank">Ver no Google maps</a>
-        {% endif %}
-      {% endif %}
-
+            {% if site.conf.address %}
+              <p>{{ site.conf.address }}</p>
+              <a class="con-btn" href="#">Ver no Google maps</a>
+            {% endif %}
+        </div>
     </div>
-
-  </div>
 </section>
 <!-- / LOCATION -->
+{% endif %}

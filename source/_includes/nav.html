@@ -1,0 +1,49 @@
+<nav class="top-nav">
+    <ul>
+
+      {% if site.sections.about %}
+        <li>
+          <a href="#about" class="scroll">Sobre</a>
+        </li>
+      {% endif %}
+
+      {% if site.sections.location %}
+        <li>
+          <a href="#location" class="scroll">Localização</a>
+        </li>
+      {% endif %}
+
+      {% if site.sections.speakers %}
+        <li>
+          <a href="#speakers" class="scroll">Palestrantes</a>
+        </li>
+      {% endif %}
+
+      {% if site.sections.schedule %}
+        <li>
+          <a href="#schedule" class="scroll">Cronograma</a>
+        </li>
+      {% endif %}
+
+      {% if site.sections.sponsors %}
+        <li>
+          <a href="#sponsors" class="scroll">Patrocinadores</a>
+        </li>
+      {% endif %}
+
+      {% if site.sections.partners %}
+        <li>
+          <a href="#partners" class="scroll">Parceiros</a>
+        </li>
+      {% endif %}
+
+      {% if site.sections.contact %}
+        <li>
+          <a href="#contact" class="scroll">Contato</a>
+        </li>
+      {% endif %}
+    </ul>
+    <a href="#" id="pull"><img src="/images/menu-icon.png" title="menu"></a>
+</nav>
+
+<div class="clearfix"></div>

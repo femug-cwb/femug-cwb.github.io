@@ -1,69 +1,19 @@
 ---
-layout: meetings
-permalink: /
-
-conf:
-  name: 2º FEMUG-CWB
-  description: "2º encontro Front-end meetup group em Curitiba/PR"
-  date: 05 DEZ 2015 14H
-  address: "Avenida Cândido de Abreu, 381 - Centro Cívico, Curitiba - PR, Brasil"
-  location: "https://goo.gl/maps/aGtgmJXgUak"
-  venue: Aldeia Coworking
-  city: Curitiba / PR
-  register_link: http://www.eventick.com.br/2o-encontro-femug-cwb
-  cover: /assets/images/bg.jpg
-
-partners:
-  - name: BrazilJS
-    logo: http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png
-    url: http://braziljs.org
-  - name: "Aldeia Coworking"
-    logo: "http://aldeiaco.com.br/wp-content/themes/ice_ice_aldeia/images/logo_aldeia.png"
-    url: "http://aldeiaco.com.br/"
-
-sponsors:
-
-schedule:
-  - name: "Abertura"
-    time: 13:30 às 13:50
-    description: "Apresentação inicial do que é o FEMUG e alguns agradecimentos"
-
-  - name: "Tira dúvidas"
-    time: 13:50 às 14:00
-    description: "10 minutos para tirar dúvidas referente a apresentação inicial"
-
-  - name: "Cezar Luiz"
-    photo: "https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash2/v/t1.0-9/580791_411414635572144_1549346302_n.jpg?oh=529a5f5ee072c0b1db12315938cddece&oe=56EFBEC8&__gda__=1454711919_9e87070f918faa566f91e313a0982f49"
-    presentation:
-      title: "React? Já ouvi falar."
-      description: "Conceito sobre React, ciclos de vida, Flux e programação reativa. Tudo com ES6!"
-      time: 14:00 às 14:40
-
-  - name: "Tira dúvidas"
-    time: 14:40 às 14:50
-    description: "10 minutos para tirar dúvidas referente a palestra anterior"
-
-  - name: "Vitor Perez"
-    photo: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/c0.30.160.160/p160x160/1390461_561630597239391_1026120467_n.jpg?oh=b933f07fce4a3381d76bee9bde784494&oe=56FA8E08&__gda__=1459129419_e1e6e5300521448a95bf91ee770f3fb4"
-    presentation:
-      title: "UX vs TI ou UX + TI?"
-      description: "Um profissional de TI deve saber pensar na experiência do usuário? O profissional de UX deve saber programar? Qual a relação das duas profissões no dia a dia das empresas? E para as startups, é melhor escolher um profissional pato (faz tudo ao mesmo tempo e não faz nada direito) ou focar nos especializados?"
-      time: 14:50 às 15:20
-
-  - name: "Tira dúvidas"
-    time: 15:20 às 15:30
-    description: "10 minutos para tirar dúvidas referente a palestra anterior"
-
-  - name: "Fernando Moreira"
-    photo: "https://avatars0.githubusercontent.com/u/1318271"
-    presentation:
-      title: "Atomic design com SASS"
-      description: "Organização de grandes projetos com Atomic Design utilizando SASS como Pré-processador."
-      time: 15:30 às 16:00
-  - name: "Tira dúvidas"
-    time: 16:00 às 16:10
-    description: "10 minutos para tirar dúvidas referente a palestra anterior"
-
-  - name: "Mesa redonda / Coffee-break"
-    time: 16:10 às 17:00
+layout: default
 ---
+
+{% include section/about.html %}
+
+{% include section/location.html %}
+
+{% include section/speakers.html %}
+
+{% include section/register-banner.html %}
+
+{% include section/schedule.html %}
+
+{% include section/sponsors.html %}
+
+{% include section/partners.html %}
+
+{% include section/contact.html %}

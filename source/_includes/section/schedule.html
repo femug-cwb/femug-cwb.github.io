@@ -1,13 +1,12 @@
-
-{% include section/register-banner.html %}
-
+{% if site.sections.schedule %}
 <!-- SCHEDULE -->
-<section id="schedule" class="schedule sections">
+<section class="schedule sections" id="schedule">
 
   <div class="container">
 
-    <div class="section-head">
+    <div class="speaker-head">
       <h2>Cronograma</h2>
+      <p>Conheça os caras!</p>
     </div>
 
     <div class="schedule-tbl">
@@ -20,18 +19,18 @@
           </tr>
         </thead>
         <tbody>
-          {% for schedule in page.schedule %}
-            {% if schedule.presentation %}
+          {% for slot in site.data.schedule %}
+            {% if slot.presentation %}
               <tr>
-                <td class="schedule-time">{{ schedule.presentation.time }}</td>
-                <td class="schedule-slot">{{ schedule.presentation.title }}</td>
-                <td class="schedule-description">{{ schedule.presentation.description | strip_html | truncatewords: 40 }}</td>
+                <td class="schedule-time">{{ slot.presentation.time }}</td>
+                <td class="schedule-slot">{{ slot.presentation.title }}</td>
+                <td class="schedule-description">{{ slot.presentation.description }}</td>
               </tr>
             {% else %}
               <tr class="schedule-other">
-                <td class="schedule-time">{{ schedule.time }}</td>
-                <td class="schedule-slot">{{ schedule.name }}</td>
-                <td class="schedule-description">{{ schedule.description }}</td>
+                <td class="schedule-time">{{ slot.time }}</td>
+                <td class="schedule-slot">{{ slot.name }}</td>
+                <td class="schedule-description">{{ slot.description }}</td>
               </tr>
             {% endif %}
           {% endfor %}
@@ -43,3 +42,4 @@
 
 </section>
 <!-- / SCHEDULE -->
+{% endif %}
