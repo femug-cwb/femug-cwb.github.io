@@ -1,37 +1,31 @@
-
+{% if site.sections.speakers %}
 <!-- SPEAKERS -->
 <section id="speakers" class="speaker sections">
-
-  <div class="container">
-
-    <div class="speaker-head">
-      <h2>Palestrantes</h2>
-      <p>... os manjadores das manjarias.</p>
-    </div>
-
-    <div class="row text-center speakers">
-      <div class="col-md-10 col-md-offset-1">
-        <div class="row">
-          {% for speaker in page.schedule %}
-            {% if speaker.presentation %}
-
-              <div class="col-md-4 speaker_grid">
-                <figure class="speech-thumb view">
-                  <img src="{{ speaker.photo }}" alt="{{ speaker.name }}" class="img-responsive">
-                </figure>
-
-                <div class="clearfix"></div>
-
-                <h3>{{ speaker.name }} <small>{{ speaker.presentation.title }}</small></h3>
-
-              </div>
-            {% endif %}
-          {% endfor %}
+    <div class="container">
+        <div class="speaker-head">
+            <h2>Palestrantes</h2>
+            <p>Conheça os caras!</p>
         </div>
-      </div>
+        <div class="row text-center speakers">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="row">
+              {% for speaker in site.data.schedule %}
+                {% if speaker.presentation %}
+                  <div class="col-md-4 speaker_grid">
+                    <figure class="speech-thumb view">
+                      <img src="{{ speaker.photo }}" alt="{{ speaker.name }}" class="img-responsive">
+                    </figure>
+
+                    <div class="clearfix"></div>
+
+                    <h3>{{ speaker.name }} <small>{{ speaker.presentation.title }}</small></h3>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
     </div>
-
-  </div>
-
 </section>
 <!-- / SPEAKERS -->
+{% endif %}
