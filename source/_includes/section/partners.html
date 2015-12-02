@@ -1,14 +1,10 @@
-
+{% if site.sections.partners %}
 <!-- PARTNERS -->
 <section class="partners" id="partners">
   <div class="container">
-
-    <header class="section-head">
-      <h2 class="section-title">Parceiros</h2>
-    </header>
-
+    <h2 class="section-title">Parceiros</h2>
     <ul class="partners-list">
-    {% for partner in page.partners %}
+    {% for partner in site.data.partners %}
       <li class="partner-item">
         <a class="partner-logo partner-link" href="{{ partner.url }}"><img src="{{ partner.logo }}" alt="{{ partner.name }}" class="photo" /></a>
       </li>
@@ -17,7 +13,7 @@
         <a class="partner-logo partner-link partner-call" href="#"><img src="assets/img/your-logo.jpg" alt="your logo" class="photo" /></a>
       </li>
     </ul>
-
   </div>
 </section>
 <!-- / PARTNERS -->
+{% endif %}
