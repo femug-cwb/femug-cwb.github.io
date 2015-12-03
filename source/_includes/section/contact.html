@@ -1,7 +1,6 @@
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
-
   <div class="container">
     <header class="section-head">
       <h2 class="section-title">Contato</h2>
@@ -13,27 +12,53 @@
       style="display:none;" onload="if(submitted)
       {window.location='http://YOUR-THANK-YOU-PAGE-URL';}"></iframe>
 
-      <form action="https://docs.google.com/forms/d/1kHEqlVYI-cN2M4qqRWbn9vT8jn-XC6MSWgbMestuRQs/formResponse?embedded=true" method="POST" id="ss-form" target="_self" onsubmit="">
+      <form action="https://docs.google.com/forms/d/1kHEqlVYI-cN2M4qqRWbn9vT8jn-XC6MSWgbMestuRQs/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
         <ol role="list" class="ss-question-list" style="padding-left: 0">
-          <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item ss-item-required ss-paragraph-text">
-              <div class="ss-form-entry">
-                <div class="form-group">
-                  <label class="ss-q-item-label" for="entry_865782690">
-                    <div class="ss-q-title">Aqui tu podes deixar tua dúvida, critica ou sugestão
-                      <label for="itemView.getDomIdToLabel()" aria-label="(campo obrigatório)"></label>
-                      <span class="ss-required-asterisk" aria-hidden="true">*</span>
-                    </div>
-                    <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-                  </label>
-
-                  <textarea name="entry.865782690" rows="8" cols="0" class="ss-q-long valid form-control" id="entry_865782690" dir="auto" aria-label="Aqui tu podes deixar tua dúvida, critica ou sugestão  " aria-required="true" required=""></textarea>
+            <div class="ss-form-question errorbox-bad" role="listitem">
+              <div class="errormsg"></div>
+              <div dir="auto" class="ss-item ss-item-required ss-text">
+                <div class="ss-form-entry">
+                  <div class="form-group">
+                    <label class="ss-q-item-label text-left" for="entry_1670704626">
+                      <div class="ss-q-title">Nome:</div>
+                      <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                    </label>
+                    <input type="text" name="entry.1670704626" value="" class="ss-q-short required form-control" id="entry_1670704626" dir="auto" aria-label="Nome  " aria-required="true" required="" title="Nome" placeholder="Nome">
+                    <div class="error-message" id="1283696300_errorMessage"></div>
+                  </div>
                 </div>
-                <div class="error-message" id="1271005094_errorMessage"></div>
-                <div class="required-message">* Esta pergunta é obrigatória</div>
               </div>
             </div>
-          </div>
+            <div class="ss-form-question errorbox-bad" role="listitem">
+              <div class="errormsg"></div>
+              <div dir="auto" class="ss-item ss-item-required ss-text">
+                <div class="ss-form-entry">
+                  <div class="form-group">
+                    <label class="ss-q-item-label text-left" for="entry_674970306">
+                      <div class="ss-q-title">E-mail:</div>
+                      <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                    </label>
+                    <input type="text" name="entry.674970306" value="" class="ss-q-short required form-control" id="entry_674970306" dir="auto" aria-label="E-mail  " aria-required="true" required="" title="E-mail" placeholder="E-mail">
+                    <div class="error-message" id="2075798912_errorMessage"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ss-form-question errorbox-good" role="listitem">
+              <div dir="auto" class="ss-item ss-item-required ss-paragraph-text">
+                <div class="ss-form-entry">
+                  <div class="form-group">
+                    <label class="ss-q-item-label text-left" for="entry_865782690">
+                      <div class="ss-q-title">Mensagem:</div>
+                      <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                    </label>
+                    <textarea name="entry.865782690" rows="8" cols="0" class="ss-q-long form-control" id="entry_865782690" dir="auto" aria-label="Deixe a sua dúvida, crítica ou sugestão para o FEMUG-CWB:  " aria-required="true" required="" placeholder="Deixe a sua dúvida, crítica ou sugestão para o FEMUG-CWB"></textarea>
+                    <div class="error-message" id="1271005094_errorMessage"></div>
+                  </div>
+                  <div class="required-message">* Todos os campos são obrigatórios</div>
+                </div>
+              </div>
+            </div>
 
           <input type="hidden" name="draftResponse" value="[,,&quot;5089795088044776398&quot;]">
           <input type="hidden" name="pageHistory" value="0">
