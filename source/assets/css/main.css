@@ -5690,3 +5690,6 @@ td.visible-print {
 
 }
 
+.ss-q-item-label {
+	display: block;
+}
