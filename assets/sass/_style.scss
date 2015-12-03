@@ -451,7 +451,6 @@ ul.soc_icons {
 /******** Iframe contato *******/
 
 .google-form{
-    text-align: center;
 
     textarea{width: 100%;}
 
@@ -488,13 +487,14 @@ ul.soc_icons {
 .footer {
     background: $txt-color;
     padding: 0 0 1em 0;
+    margin-top: 40px;
 }
 
 .social{
     width: 100%auto;
     background: #fff;
     padding-bottom: 20px;
-    
+
     h5{
         color: #555;
         text-transform: uppercase;
@@ -512,6 +512,7 @@ ul.soc_icons {
 
     }
 }
+
 
 .logo-footer{
     margin-top: 30px;

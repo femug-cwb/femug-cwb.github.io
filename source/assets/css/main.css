@@ -4437,10 +4437,6 @@ ul.soc_icons {
 
 /******** Iframe contato *******/
 
-.google-form {
-	text-align: center;
-}
-
 .google-form textarea {
 	width: 100%;
 }
@@ -4477,6 +4473,7 @@ ul.soc_icons {
 .footer {
 	background: rgba(0, 0, 0, 0.7);
 	padding: 0 0 1em 0;
+	margin-top: 40px;
 }
 
 .social {
@@ -5716,6 +5713,3 @@ td.visible-print {
 
 }
 
-.ss-q-item-label {
-	display: block;
-}
