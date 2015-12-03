@@ -4210,7 +4210,7 @@ i.icon3:hover {
 #contact {
 	background: url(../images/bg-4.jpg);
 	background-size: cover;
-	min-height: 654px;
+	min-height: 562px;
 }
 
 .feed-head {
@@ -4359,57 +4359,7 @@ ul.soc_icons {
 
 /*********************/
 
-.logo2 {
-	float: left;
-	margin-top: 0.8em;
-}
-
-.copy-right {
-	float: right;
-	margin-top: 0.8em;
-}
-
-.footer {
-	background: rgba(0, 0, 0, 0.7);
-	padding: 1em 0;
-}
-
-.copy-right p {
-	color: #fff;
-	font-weight: 300;
-	font-size: 1.15em;
-}
-
-.copy-right p a {
-	color: #c12b2c;
-}
-
-#toTop {
-	display: none;
-	text-decoration: none;
-	position: fixed;
-	bottom: 29px;
-	right: 3%;
-	overflow: hidden;
-	width: 30px;
-	height: 23px;
-	border: none;
-	text-indent: 100%;
-	background: url("../images/top-up.png") no-repeat 0px 0px;
-}
-
-#toTopHover {
-	width: 30px;
-	height: 23px;
-	display: block;
-	overflow: hidden;
-	float: right;
-	opacity: 0;
-	-moz-opacity: 0;
-	filter: alpha(opacity=0);
-}
-
-/********Schedule section ********/
+/******** Schedule section ********/
 
 #schedule {
 	background: #F1F1F1;
@@ -4515,6 +4465,82 @@ ul.soc_icons {
 
 .google-form #navigation-table {
 	width: 100%;
+}
+
+/*********** FOOTER **********/
+
+.logo2 {
+	float: left;
+	margin-top: 0.8em;
+}
+
+.footer {
+	background: rgba(0, 0, 0, 0.7);
+	padding: 0 0 1em 0;
+}
+
+.social {
+	width: 100% auto;
+	background: #fff;
+	padding-bottom: 20px;
+}
+
+.social h5 {
+	color: #555;
+	text-transform: uppercase;
+}
+
+.social-list li {
+	display: inline-block;
+	list-style-type: none;
+	margin: 10px;
+}
+
+.social-list li img {
+	width: 40px;
+}
+
+.logo-footer {
+	margin-top: 30px;
+}
+
+p.copyright {
+	margin-top: 1rem;
+	margin-bottom: 0;
+	color: #fff;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+a.codigo-conduta {
+	color: #fff;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 29px;
+	right: 3%;
+	overflow: hidden;
+	width: 30px;
+	height: 23px;
+	border: none;
+	text-indent: 100%;
+	background: url("../images/top-up.png") no-repeat 0px 0px;
+}
+
+#toTopHover {
+	width: 30px;
+	height: 23px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
