@@ -2,8 +2,8 @@
 title: FEMUG-CWB
 description: "Seja bem-vindo ao FEMUG-CWB, projeto para unir os desenvolvedores Front-End de Curitiba!"
 url: http://femug-cwb.com.br
-favicon: /images/favicon.ico
-# google-analytics: "UA-70860926-1"
+favicon: /images/favicon.png
+google-analytics: "UA-70860926-1"
 email: femug.cwb@gmail.com
 twitter: femugcwb
 
