@@ -57,7 +57,6 @@ GEM
     sass (3.4.19)
     toml (0.1.2)
       parslet (~> 1.5.0)
-    wdm (0.1.1)
     yajl-ruby (1.2.1)
 
 PLATFORMS
@@ -68,7 +67,6 @@ DEPENDENCIES
   jekyll (~> 2.5.3)
   rake (~> 10.4.2)
   sass (~> 3.4.10)
-  wdm (>= 0.1.0)
 
 BUNDLED WITH
    1.10.6
