@@ -10,4 +10,4 @@ twitter: femugcwb
 source: source
 sass:
   sass_dir: _sass
-  style: expanded # compressed # expanded
+  style: compressed # expanded
