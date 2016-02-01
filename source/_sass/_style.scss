@@ -45,10 +45,10 @@ p.lead {
   @extend .container;
   text-align: center;
   display: inline-block;
-  padding: 2.6em;
+ // padding: 2.6em;
 
   img {
-    width: 500px;
+    width: 370px;
     display: inline-block;
   }
 
@@ -57,6 +57,16 @@ p.lead {
       width: 100%;
     }
   }
+}
+
+form {
+    margin-top: 40px;
+
+    .lead{
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px; 
+    }
 }
 
 .social {
@@ -82,6 +92,6 @@ p.lead {
   }
 
   img {
-    width: 48px;
+    width: 30px;
   }
 }
