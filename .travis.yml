@@ -22,3 +22,4 @@ branches:
   - source
 notifications:
   email: false
+  slack: femug-cwb:hGNwFnWsN6jsGMyfYiGNcWc1
